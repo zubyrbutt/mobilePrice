@@ -60,7 +60,7 @@
                     <li class="has_sub">
                         <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-cellphone"></i> <span> Post New Mobile </span> <span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
                         <ul class="list-unstyled">
-                            <li><a href="{{url('/mobile/android')}}"><i class="mdi mdi-android"></i>Android</a></li>
+                            <li><a href="{{url('/mobile/android/create')}}"><i class="mdi mdi-android"></i>Android</a></li>
                             <li><a href="#"><i class="mdi mdi-apple"></i>Apple</a></li>
                             <li><a href="advanced-alertify.html">Alertify</a></li>
                             <li><a href="advanced-rangeslider.html">Range Slider</a></li>

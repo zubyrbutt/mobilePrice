@@ -18,8 +18,8 @@ Route::get('/', function () {
 
 Route::get('/admins', 'AdminController@index');
 
-Route::get('mobile/android', 'AdminController@index')->name('android.index');
-Route::get('mobile/android/create', 'AndroidController@create')->name('android.create');
-Route::POST('mobile/android/fetch', 'AndroidController@fetch')->name('dynamicDependent.fetch');
+Route::get('mobile/android/create', 'AdminController@create')->name('android.index');
+//Route::get('mobile/android/create', 'AndroidController@create')->name('android.create');
+//Route::POST('mobile/android/fetch', 'AndroidController@fetch')->name('dynamicDependent.fetch');
 
 

@@ -30,11 +30,25 @@
                         <form method="post">
 
                             <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Company Name</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" name="companyName" id="companyName" class="form-control dynamic"
+                                            data-dependent="version">
+                                        <option>Select Company Name</option>
+                                        <option value="1">Samsung</option>
+
+
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
                                 <label for="name" class="col-sm-2 col-form-label">Mobile Name</label>
                                 <div class="col-sm-10">
                                     <input class="form-control" type="text" value="" id="name" placeholder="Mobile Name ..">
                                 </div>
                             </div>
+
 
                             <div class="form-group row">
                                 <label for="price" class="col-sm-2 col-form-label">Price PKR.</label>
@@ -50,10 +64,6 @@
                                     <select class="form-control" name="code_name" id="code_name" class="form-control dynamic"
                                             data-dependent="version">
                                         <option>Select Code Name</option>
-                                        @foreach($android_lists as $android_list)
-                                            <option value="{{$android_list->code_name}}">{{$android_list->code_name}}</option>
-
-                                        @endforeach
 
                                     </select>
                                 </div>
