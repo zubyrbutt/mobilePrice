@@ -26,17 +26,21 @@
                 <div class="col-12">
                     <div class="card m-b-30">
                         <div class="card-body">
-
-                        <form method="post">
-
+                            @if ($errors->any())
+                                @foreach ($errors->all() as $error)
+                                    <div>{{$error}}</div>
+                                @endforeach
+                            @endif
+                        <form method="post" method="post" action="{{route('android.store')}}">
+    @csrf
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Company Name</label>
                                 <div class="col-sm-10">
-                                    <select class="form-control" name="companyName" id="companyName" class="form-control dynamic"
+                                    <select class="form-control" name="company_id" id="company_id" class="form-control dynamic"
                                             data-dependent="version">
                                         <option>Select Company Name</option>
                                         <option value="1">Samsung</option>
-
+                                        <option value="2">Infinix</option>
 
                                     </select>
                                 </div>
@@ -45,7 +49,7 @@
                             <div class="form-group row">
                                 <label for="name" class="col-sm-2 col-form-label">Mobile Name</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" type="text" value="" id="name" placeholder="Mobile Name ..">
+                                    <input class="form-control" type="text" value="" name="mobileName" id="name" placeholder="Mobile Name ..">
                                 </div>
                             </div>
 
@@ -53,7 +57,7 @@
                             <div class="form-group row">
                                 <label for="price" class="col-sm-2 col-form-label">Price PKR.</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" type="text" value="" id="price" placeholder="123456..">
+                                    <input class="form-control" name="mobilePrice" type="text" value="" id="price" placeholder="123456..">
                                 </div>
                             </div>
 
@@ -70,6 +74,7 @@
 
                             </div>
 
+<button class="btn btn-primary pull-right" >Post</button>
 
                         </form>
                         </div>

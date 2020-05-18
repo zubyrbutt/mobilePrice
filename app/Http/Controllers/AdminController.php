@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Admin;
+use App\Product;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -35,7 +36,23 @@ class AdminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       //    dd($request->toArray());
+
+       $this->validate(request(),[
+
+
+           'mobileName' => 'required',
+
+       ]);
+       $product = new Product;
+
+       $product->company_id = $request->get('company_id');
+       $product->mobileName = $request->get('mobileName');
+       $product->mobilePrice = $request->get('mobilePrice');
+
+       $product->save();
+
+       return redirect()->back();
     }
 
     /**
