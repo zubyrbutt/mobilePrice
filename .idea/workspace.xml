@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7af7b05-90fc-46c2-8154-ea98f2e677f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/admin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Company.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_17_101916_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_17_101916_create_products_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/posts/android.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/posts/android.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -171,7 +166,7 @@
       <workItem from="1586364993570" duration="3281000" />
       <workItem from="1587244917580" duration="46000" />
       <workItem from="1589772768816" duration="5788000" />
-      <workItem from="1589825648360" duration="1129000" />
+      <workItem from="1589825648360" duration="3038000" />
     </task>
     <servers />
   </component>

@@ -49,6 +49,17 @@ class AdminController extends Controller
        $product->company_id = $request->get('company_id');
        $product->mobileName = $request->get('mobileName');
        $product->mobilePrice = $request->get('mobilePrice');
+       $product->display = $request->get('display');
+       $product->processor = $request->get('processor');
+       $product->frontCamera = $request->get('frontCamera');
+       $product->rearCamera = $request->get('rearCamera');
+       $product->ram = $request->get('ram');
+       $product->storage = $request->get('storage');
+       $product->batteryCapacity = $request->get('batteryCapacity');
+       $product->os = $request->get('os');
+       $product->marketStatus = $request->get('marketStatus');
+       $product->images = $request->get('images');
+       $product->summary = $request->get('summary');
 
        $product->save();
 
