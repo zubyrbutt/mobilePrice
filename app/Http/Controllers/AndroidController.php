@@ -30,7 +30,7 @@ class AndroidController extends Controller
             ->orderBy('id', 'asc')
             ->get();
 
-        return view('admin.posts.android', compact('android_lists'));
+        return view('admin.pages.android', compact('android_lists'));
     }
 
 

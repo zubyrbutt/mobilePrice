@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Admin;
+use App\Category;
 use App\Product;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,8 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin.home');
+        $brands = Category::all();
+        return view('admin.pages.home', compact('brands'));
     }
 
     /**
@@ -25,7 +27,7 @@ class AdminController extends Controller
      */
     public function create()
     {
-        return view('admin.posts.android');
+        return view('admin.pages.android');
     }
 
     /**
@@ -39,8 +41,6 @@ class AdminController extends Controller
        //    dd($request->toArray());
 
        $this->validate(request(),[
-
-
            'mobileName' => 'required',
 
        ]);

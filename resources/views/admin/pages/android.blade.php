@@ -1,5 +1,5 @@
 @extends('admin.layouts.main')
-
+@section('title', 'Post New Mobile')
 @section('content')
 
     <div class="page-content-wrapper ">
