@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 
 Route::get('/admins', 'AdminController@index');
@@ -26,6 +24,11 @@ Route::get('mobile/categories/create', 'CategoryController@create')->name('categ
 Route::post('mobile/categories/store', 'CategoryController@store')->name('category.store');
 
 Route::get('mobile/imageupload', 'CategoryController@imageupload')->name('category.upload');
+
+
+// Websites Routes
+
+Route::get('/', 'HomeController@index')->name('home.index');
 
 
 
