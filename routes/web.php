@@ -25,5 +25,7 @@ Route::get('mobile/categories', 'CategoryController@index')->name('category.inde
 Route::get('mobile/categories/create', 'CategoryController@create')->name('category.create');
 Route::post('mobile/categories/store', 'CategoryController@store')->name('category.store');
 
+Route::get('mobile/imageupload', 'CategoryController@imageupload')->name('category.upload');
+
 
 

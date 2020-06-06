@@ -31,7 +31,7 @@
                                     <div>{{$error}}</div>
                                 @endforeach
                             @endif
-                            <form method="post" method="post" action="{{route('android.store')}}">
+                            <form method="post" action="{{route('android.store')}}" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Company Name</label>
@@ -40,8 +40,11 @@
                                                 class="form-control dynamic"
                                                 data-dependent="version">
                                             <option>Select Company Name</option>
-                                            <option value="1">Samsung</option>
-                                            <option value="2">Infinix</option>
+                                            @foreach($brands as $brand)
+                                                <option value="{{$brand->id}}">{{$brand->name}}</option>
+
+                                                @endforeach
+
 
                                         </select>
                                     </div>
@@ -65,7 +68,8 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="display" class="col-sm-2 col-form-label">Display <i class="mdi mdi-monitor"></i></label>
+                                    <label for="display" class="col-sm-2 col-form-label">Display <i
+                                            class="mdi mdi-monitor"></i></label>
                                     <div class="col-sm-10">
                                         <input class="form-control" name="display" type="text" value="" id="display"
                                                placeholder="display..">
@@ -89,7 +93,7 @@
                                     </div>
                                 </div>
 
-<div class="form-group row">
+                                <div class="form-group row">
                                     <label for="rearCamera" class="col-sm-2 col-form-label">Rear Camera</label>
                                     <div class="col-sm-10">
                                         <input class="form-control" name="rearCamera" type="text" value=""
@@ -99,7 +103,7 @@
                                 </div>
 
 
-<div class="form-group row">
+                                <div class="form-group row">
                                     <label for="ram" class="col-sm-2 col-form-label">Ram</label>
                                     <div class="col-sm-10">
                                         <input class="form-control" name="ram" type="text" value=""
@@ -109,7 +113,7 @@
                                 </div>
 
 
-<div class="form-group row">
+                                <div class="form-group row">
                                     <label for="storage" class="col-sm-2 col-form-label">Storage</label>
                                     <div class="col-sm-10">
                                         <input class="form-control" name="storage" type="text" value=""
@@ -119,8 +123,9 @@
                                 </div>
 
 
-<div class="form-group row">
-                                    <label for="batteryCapacity" class="col-sm-2 col-form-label">Battery Capacity</label>
+                                <div class="form-group row">
+                                    <label for="batteryCapacity" class="col-sm-2 col-form-label">Battery
+                                        Capacity</label>
                                     <div class="col-sm-10">
                                         <input class="form-control" name="batteryCapacity" type="text" value=""
                                                id="batteryCapacity"
@@ -145,7 +150,6 @@
                                 </div>
 
 
-
                                 <div class="form-group row">
                                     <label for="batteryCapacity" class="col-sm-2 col-form-label">Market Status</label>
                                     <div class="col-sm-10">
@@ -158,19 +162,18 @@
                                 <div class="form-group row">
                                     <label for="batteryCapacity" class="col-sm-2 col-form-label">images</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" name="images" type="file" value=""
-                                               id="images">
+                                        <input class="form-control" name="image" type="file" value="" id="image" />
                                     </div>
                                 </div>
-
-   <div class="form-group row">
+                                <div class="form-group row">
                                     <label for="batteryCapacity" class="col-sm-2 col-form-label">Summary</label>
                                     <div class="col-sm-10">
-                                        <textarea class="form-control" name="summary" id="summary" placeholder="summary .."></textarea>
+                                        <textarea class="form-control" name="summary" id="summary"
+                                                  placeholder="summary .."></textarea>
                                     </div>
                                 </div>
 
-                                <button class="btn btn-primary pull-right">Post</button>
+                                <button type="submit" class="btn btn-primary pull-right">Upload</button>
 
                             </form>
                         </div>

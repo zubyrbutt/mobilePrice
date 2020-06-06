@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
 use Illuminate\Http\Request;
 
@@ -13,6 +14,8 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
     public function index()
     {
         $brands = Category::latest()->get();
@@ -42,15 +45,23 @@ class CategoryController extends Controller
 
         $this->validate(request(),[
             'name' =>'required',
+            'image' => 'required'
 
         ]);
+        $cover = $request->file('image');
+        $extension = $cover->getClientOriginalExtension();
+        Storage::disk('public')->put($cover->getFilename().'.'.$extension,  File::get($cover));
+
 
         $brand = new Category;
 
+
         $brand->name = $request->get('name');
         $brand->summary = $request->get('summary');
+        $brand->image = $cover->getClientOriginalName();
+
         $brand->save();
-        
+
         return redirect()->back();
     }
 

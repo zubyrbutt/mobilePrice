@@ -17,4 +17,27 @@
 
 <!-- App js -->
 <script src="{{asset('admin/assets/js/app.js')}}"></script>
+<script>
+    $(document).ready(function () {
+        $('form').ajaxForm({
+            beforeSend:function(){
+                $('#success').empty();
+                $('.progress-bar').text('%0');
+                $('.progress-bar').css('width','0%')
+            },
+            uploadProgress:function (event,position,total,percentComplete) {
+                $('.progress-bar').text(percentComplete + '0%');
+                $('.progress-bar').css('width', percentComplete + '0%');
+            },
+            success:function(data){
+                if(data.success){
+                    $('#success').html('<div class="text-sccuess text-center"><b>' +data.success+'</b></div><br />');
+                    $('#success').append(data.image);
+                    $('.processor-bar').text('Uploaded');
+                    $('.progress-bar').css('width','100%');
 
+                }
+            }
+        });
+    })
+</script>

@@ -2,26 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7af7b05-90fc-46c2-8154-ea98f2e677f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layouts/sidebar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/categories.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/categoryForm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/partials/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/partials/head.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/partials/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/partials/scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/admin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AndroidController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AndroidController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/home.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/posts/android.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/android.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/816fbf1e-1fd3-4560-bb96-db9dfc04963b.jpg/phpDA4D.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/android.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/android.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/partials/scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/partials/scripts.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -199,7 +187,8 @@
       <workItem from="1589825648360" duration="3038000" />
       <workItem from="1591346359376" duration="63000" />
       <workItem from="1591346548739" duration="364000" />
-      <workItem from="1591346987867" duration="14965000" />
+      <workItem from="1591346987867" duration="15085000" />
+      <workItem from="1591423893040" duration="12137000" />
     </task>
     <servers />
   </component>

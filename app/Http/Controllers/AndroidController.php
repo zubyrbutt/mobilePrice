@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Android;
+use App\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -15,7 +16,7 @@ class AndroidController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
@@ -25,31 +26,10 @@ class AndroidController extends Controller
      */
     public function create()
     {
-        $android_lists = DB::table('android_os')
 
-            ->orderBy('id', 'asc')
-            ->get();
-
-        return view('admin.pages.android', compact('android_lists'));
     }
 
 
-    public  function fetch(Request $request){
-        //dd($request);
-        $select = $request->get('select');
-        $value = $request->get('value');
-        $dependent = $request->get('dependent');
-        $data = DB::table('android_os')
-            ->where($select,$value)
-            ->groupBy($dependent)
-            ->get();
-
-        $output = '<option value="">Select '.ucfirst($dependent).'</option>';
-        foreach ($data as $row){
-            $output .='<option value="'.$row->$dependent.'">'.$row->$dependent.'</option>';
-            echo $output;
-        }
-    }
 
     /**
      * Store a newly created resource in storage.
