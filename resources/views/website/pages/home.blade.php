@@ -336,13 +336,14 @@
                     <!-- Box -->
                     @foreach($companies as $company)
                         <a href="#" class="category-small-box">
-                            <i class="im im-icon-Hamburger"></i>
+{{--                            <i class="im im-icon-Hamburger"></i>--}}
                             <h4>{{$company->name}}</h4>
                             <span class="category-box-counter">12</span>
                         </a>
                     @endforeach
 
                 </div>
+                <a href="#" class="pull-right">view more</a>
             </div>
         </div>
     </div>
@@ -354,29 +355,47 @@
     <!-- Fullwidth Section / End -->
 
 
-    <!-- Info Section -->
+    <!-- Products-->
     <section class="fullwidth padding-top-75 padding-bottom-70" data-background-color="#f9f9f9">
         <div class="container">
 
-
-
-            <div class="infinite-scroll">
             <div class="row icons-container">
                 <!-- Stage -->
-                @foreach($products as $product)
+
+            @foreach($products as $product)
                     <div class="col-md-4">
                         <div class="icon-box-2">
                             <img src="{{$product->images}}" alt="{{$product->mobileName}}" style="margin: 0; padding:0" width="200" height="160">
+                            <h3><strong>Rs. {{$product->mobilePrice}}</strong></h3>
 
-                            <h3>{{$product->mobileName}}</h3>
+                            <p>{{$product->mobileName}}</p>
+                        </div>
+                    </div>
+                @endforeach
 
+                <a href="#" class="pull-right"> <p class="pull-right">Latest mobiles</p>
+                </a>
+
+            </div>
+
+            <div class="row icons-container">
+                <!-- Stage -->
+
+                @foreach($oppo as $item)
+                    <div class="col-md-4">
+                        <div class="icon-box-2">
+                            <img src="{{$item->images}}" alt="{{$item->mobileName}}" style="margin: 0; padding:0" width="200" height="160">
+                            <h3><strong>Rs. {{$item->mobilePrice}}</strong></h3>
+
+                            <p>{{$item->mobileName}}</p>
                         </div>
                     </div>
                 @endforeach
 
 
             </div>
-
+            <a href="#" class="pull-right"> <p class="pull-right">Oppo mobiles</p>
+            </a>
             </div>
         </div>
     </section>

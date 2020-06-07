@@ -16,9 +16,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $products = Product::paginate(2);
+        //$products = Product::with('company')->where('company_id',4)->paginate(5);
+        $products = Product::paginate(5);
         $companies = Company::paginate(6);
-        return view('website.pages.home',compact('products','companies'));
+        $oppo = Product::with('company')->where('company_id',2)->paginate(5);
+        return view('website.pages.home',compact('products','companies','oppo'));
     }
 
     /**
