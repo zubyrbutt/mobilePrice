@@ -5,14 +5,14 @@
 
     <!-- Basic Page Needs
     ================================================== -->
-    <title>Listeo</title>
+    <title>Zumbola</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" href="{{asset('website/assets/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('website/assets/css/main-color.css')}}"  id="colors">
+    <link rel="stylesheet" href="{{asset('website/assets/css/main-color.css')}}" id="colors">
 
 </head>
 
@@ -34,7 +34,8 @@
 
                     <!-- Logo -->
                     <div id="logo">
-                        <a href="index-2.html"><img src="{{asset('website/assets/images/logo2.png')}}" data-sticky-logo="{{asset('website/assets/images/logo.png')}}"
+                        <a href="index-2.html"><img src="{{asset('website/assets/images/logo2.png')}}"
+                                                    data-sticky-logo="{{asset('website/assets/images/logo.png')}}"
                                                     alt=""></a>
                     </div>
 
@@ -186,124 +187,124 @@
 
 
                 <!-- Right Side Content / End -->
-{{--                <div class="right-side">--}}
-{{--                    <div class="header-widget">--}}
-{{--                        <!-- User Menu -->--}}
-{{--                        <div class="user-menu">--}}
-{{--                            <div class="user-name"><span><img src="images/dashboard-avatar.jpg" alt=""></span>Hi, Tom!--}}
-{{--                            </div>--}}
-{{--                            <ul>--}}
-{{--                                <li><a href="dashboard.html"><i class="sl sl-icon-settings"></i> Dashboard</a></li>--}}
-{{--                                <li><a href="dashboard-messages.html"><i class="sl sl-icon-envelope-open"></i> Messages</a>--}}
-{{--                                </li>--}}
-{{--                                <li><a href="dashboard-bookings.html"><i class="fa fa-calendar-check-o"></i>--}}
-{{--                                        Bookings</a></li>--}}
-{{--                                <li><a href="index-2.html"><i class="sl sl-icon-power"></i> Logout</a></li>--}}
-{{--                            </ul>--}}
-{{--                        </div>--}}
+            {{--                <div class="right-side">--}}
+            {{--                    <div class="header-widget">--}}
+            {{--                        <!-- User Menu -->--}}
+            {{--                        <div class="user-menu">--}}
+            {{--                            <div class="user-name"><span><img src="images/dashboard-avatar.jpg" alt=""></span>Hi, Tom!--}}
+            {{--                            </div>--}}
+            {{--                            <ul>--}}
+            {{--                                <li><a href="dashboard.html"><i class="sl sl-icon-settings"></i> Dashboard</a></li>--}}
+            {{--                                <li><a href="dashboard-messages.html"><i class="sl sl-icon-envelope-open"></i> Messages</a>--}}
+            {{--                                </li>--}}
+            {{--                                <li><a href="dashboard-bookings.html"><i class="fa fa-calendar-check-o"></i>--}}
+            {{--                                        Bookings</a></li>--}}
+            {{--                                <li><a href="index-2.html"><i class="sl sl-icon-power"></i> Logout</a></li>--}}
+            {{--                            </ul>--}}
+            {{--                        </div>--}}
 
 
-{{--                        <a href="dashboard-add-listing.html" class="button border with-icon">Add Listing <i--}}
-{{--                                class="sl sl-icon-plus"></i></a>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-                <!-- Right Side Content / End -->
+            {{--                        <a href="dashboard-add-listing.html" class="button border with-icon">Add Listing <i--}}
+            {{--                                class="sl sl-icon-plus"></i></a>--}}
+            {{--                    </div>--}}
+            {{--                </div>--}}
+            <!-- Right Side Content / End -->
 
                 <!-- Sign In Popup -->
-{{--                <div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">--}}
+            {{--                <div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">--}}
 
-{{--                    <div class="small-dialog-header">--}}
-{{--                        <h3>Sign In</h3>--}}
-{{--                    </div>--}}
+            {{--                    <div class="small-dialog-header">--}}
+            {{--                        <h3>Sign In</h3>--}}
+            {{--                    </div>--}}
 
-{{--                    <!--Tabs -->--}}
-{{--                    <div class="sign-in-form style-1">--}}
+            {{--                    <!--Tabs -->--}}
+            {{--                    <div class="sign-in-form style-1">--}}
 
-{{--                        <ul class="tabs-nav">--}}
-{{--                            <li class=""><a href="#tab1">Log In</a></li>--}}
-{{--                            <li><a href="#tab2">Register</a></li>--}}
-{{--                        </ul>--}}
+            {{--                        <ul class="tabs-nav">--}}
+            {{--                            <li class=""><a href="#tab1">Log In</a></li>--}}
+            {{--                            <li><a href="#tab2">Register</a></li>--}}
+            {{--                        </ul>--}}
 
-{{--                        <div class="tabs-container alt">--}}
+            {{--                        <div class="tabs-container alt">--}}
 
-{{--                            <!-- Login -->--}}
-{{--                            <div class="tab-content" id="tab1" style="display: none;">--}}
-{{--                                <form method="post" class="login">--}}
+            {{--                            <!-- Login -->--}}
+            {{--                            <div class="tab-content" id="tab1" style="display: none;">--}}
+            {{--                                <form method="post" class="login">--}}
 
-{{--                                    <p class="form-row form-row-wide">--}}
-{{--                                        <label for="username">Username:--}}
-{{--                                            <i class="im im-icon-Male"></i>--}}
-{{--                                            <input type="text" class="input-text" name="username" id="username"--}}
-{{--                                                   value=""/>--}}
-{{--                                        </label>--}}
-{{--                                    </p>--}}
+            {{--                                    <p class="form-row form-row-wide">--}}
+            {{--                                        <label for="username">Username:--}}
+            {{--                                            <i class="im im-icon-Male"></i>--}}
+            {{--                                            <input type="text" class="input-text" name="username" id="username"--}}
+            {{--                                                   value=""/>--}}
+            {{--                                        </label>--}}
+            {{--                                    </p>--}}
 
-{{--                                    <p class="form-row form-row-wide">--}}
-{{--                                        <label for="password">Password:--}}
-{{--                                            <i class="im im-icon-Lock-2"></i>--}}
-{{--                                            <input class="input-text" type="password" name="password" id="password"/>--}}
-{{--                                        </label>--}}
-{{--                                        <span class="lost_password">--}}
-{{--										<a href="#">Lost Your Password?</a>--}}
-{{--									</span>--}}
-{{--                                    </p>--}}
+            {{--                                    <p class="form-row form-row-wide">--}}
+            {{--                                        <label for="password">Password:--}}
+            {{--                                            <i class="im im-icon-Lock-2"></i>--}}
+            {{--                                            <input class="input-text" type="password" name="password" id="password"/>--}}
+            {{--                                        </label>--}}
+            {{--                                        <span class="lost_password">--}}
+            {{--										<a href="#">Lost Your Password?</a>--}}
+            {{--									</span>--}}
+            {{--                                    </p>--}}
 
-{{--                                    <div class="form-row">--}}
-{{--                                        <input type="submit" class="button border margin-top-5" name="login"--}}
-{{--                                               value="Login"/>--}}
-{{--                                        <div class="checkboxes margin-top-10">--}}
-{{--                                            <input id="remember-me" type="checkbox" name="check">--}}
-{{--                                            <label for="remember-me">Remember Me</label>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
+            {{--                                    <div class="form-row">--}}
+            {{--                                        <input type="submit" class="button border margin-top-5" name="login"--}}
+            {{--                                               value="Login"/>--}}
+            {{--                                        <div class="checkboxes margin-top-10">--}}
+            {{--                                            <input id="remember-me" type="checkbox" name="check">--}}
+            {{--                                            <label for="remember-me">Remember Me</label>--}}
+            {{--                                        </div>--}}
+            {{--                                    </div>--}}
 
-{{--                                </form>--}}
-{{--                            </div>--}}
+            {{--                                </form>--}}
+            {{--                            </div>--}}
 
-{{--                            <!-- Register -->--}}
-{{--                            <div class="tab-content" id="tab2" style="display: none;">--}}
+            {{--                            <!-- Register -->--}}
+            {{--                            <div class="tab-content" id="tab2" style="display: none;">--}}
 
-{{--                                <form method="post" class="register">--}}
+            {{--                                <form method="post" class="register">--}}
 
-{{--                                    <p class="form-row form-row-wide">--}}
-{{--                                        <label for="username2">Username:--}}
-{{--                                            <i class="im im-icon-Male"></i>--}}
-{{--                                            <input type="text" class="input-text" name="username" id="username2"--}}
-{{--                                                   value=""/>--}}
-{{--                                        </label>--}}
-{{--                                    </p>--}}
+            {{--                                    <p class="form-row form-row-wide">--}}
+            {{--                                        <label for="username2">Username:--}}
+            {{--                                            <i class="im im-icon-Male"></i>--}}
+            {{--                                            <input type="text" class="input-text" name="username" id="username2"--}}
+            {{--                                                   value=""/>--}}
+            {{--                                        </label>--}}
+            {{--                                    </p>--}}
 
-{{--                                    <p class="form-row form-row-wide">--}}
-{{--                                        <label for="email2">Email Address:--}}
-{{--                                            <i class="im im-icon-Mail"></i>--}}
-{{--                                            <input type="text" class="input-text" name="email" id="email2" value=""/>--}}
-{{--                                        </label>--}}
-{{--                                    </p>--}}
+            {{--                                    <p class="form-row form-row-wide">--}}
+            {{--                                        <label for="email2">Email Address:--}}
+            {{--                                            <i class="im im-icon-Mail"></i>--}}
+            {{--                                            <input type="text" class="input-text" name="email" id="email2" value=""/>--}}
+            {{--                                        </label>--}}
+            {{--                                    </p>--}}
 
-{{--                                    <p class="form-row form-row-wide">--}}
-{{--                                        <label for="password1">Password:--}}
-{{--                                            <i class="im im-icon-Lock-2"></i>--}}
-{{--                                            <input class="input-text" type="password" name="password1" id="password1"/>--}}
-{{--                                        </label>--}}
-{{--                                    </p>--}}
+            {{--                                    <p class="form-row form-row-wide">--}}
+            {{--                                        <label for="password1">Password:--}}
+            {{--                                            <i class="im im-icon-Lock-2"></i>--}}
+            {{--                                            <input class="input-text" type="password" name="password1" id="password1"/>--}}
+            {{--                                        </label>--}}
+            {{--                                    </p>--}}
 
-{{--                                    <p class="form-row form-row-wide">--}}
-{{--                                        <label for="password2">Repeat Password:--}}
-{{--                                            <i class="im im-icon-Lock-2"></i>--}}
-{{--                                            <input class="input-text" type="password" name="password2" id="password2"/>--}}
-{{--                                        </label>--}}
-{{--                                    </p>--}}
+            {{--                                    <p class="form-row form-row-wide">--}}
+            {{--                                        <label for="password2">Repeat Password:--}}
+            {{--                                            <i class="im im-icon-Lock-2"></i>--}}
+            {{--                                            <input class="input-text" type="password" name="password2" id="password2"/>--}}
+            {{--                                        </label>--}}
+            {{--                                    </p>--}}
 
-{{--                                    <input type="submit" class="button border fw margin-top-10" name="register"--}}
-{{--                                           value="Register"/>--}}
+            {{--                                    <input type="submit" class="button border fw margin-top-10" name="register"--}}
+            {{--                                           value="Register"/>--}}
 
-{{--                                </form>--}}
-{{--                            </div>--}}
+            {{--                                </form>--}}
+            {{--                            </div>--}}
 
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-                <!-- Sign In Popup / End -->
+            {{--                        </div>--}}
+            {{--                    </div>--}}
+            {{--                </div>--}}
+            <!-- Sign In Popup / End -->
 
             </div>
         </div>
@@ -316,7 +317,6 @@
 
     <!-- Banner
     ================================================== -->
-
 
 
     <!-- Content
@@ -336,7 +336,7 @@
                     <!-- Box -->
                     @foreach($companies as $company)
                         <a href="#" class="category-small-box">
-{{--                            <i class="im im-icon-Hamburger"></i>--}}
+                            {{--                            <i class="im im-icon-Hamburger"></i>--}}
                             <h4>{{$company->name}}</h4>
                             <span class="category-box-counter">12</span>
                         </a>
@@ -362,10 +362,11 @@
             <div class="row icons-container">
                 <!-- Stage -->
 
-            @foreach($products as $product)
+                @foreach($products as $product)
                     <div class="col-md-4">
                         <div class="icon-box-2">
-                            <img src="{{$product->images}}" alt="{{$product->mobileName}}" style="margin: 0; padding:0" width="200" height="160">
+                            <img src="{{$product->images}}" alt="{{$product->mobileName}}" style="margin: 0; padding:0"
+                                 width="200" height="160">
                             <h3><strong>Rs. {{$product->mobilePrice}}</strong></h3>
 
                             <p>{{$product->mobileName}}</p>
@@ -373,9 +374,8 @@
                     </div>
                 @endforeach
 
-                <a href="#" class="pull-right"> <p class="pull-right">Latest mobiles</p>
+                <a href="#" class="pull-right"><p class="pull-right">Latest mobiles</p>
                 </a>
-
             </div>
 
             <div class="row icons-container">
@@ -384,7 +384,8 @@
                 @foreach($oppo as $item)
                     <div class="col-md-4">
                         <div class="icon-box-2">
-                            <img src="{{$item->images}}" alt="{{$item->mobileName}}" style="margin: 0; padding:0" width="200" height="160">
+                            <img src="{{$item->images}}" alt="{{$item->mobileName}}" style="margin: 0; padding:0"
+                                 width="200" height="160">
                             <h3><strong>Rs. {{$item->mobilePrice}}</strong></h3>
 
                             <p>{{$item->mobileName}}</p>
@@ -394,127 +395,124 @@
 
 
             </div>
-            <a href="#" class="pull-right"> <p class="pull-right">Oppo mobiles</p>
+            <a href="#" class="pull-right"><p class="pull-right">Oppo mobiles</p>
             </a>
+        </div>
+<!-- Info Section / End -->
+
+
+<!-- Recent Blog Posts -->
+<section class="fullwidth margin-top-0 padding-top-75 padding-bottom-75" data-background-color="#fff">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="headline centered margin-bottom-55">
+                    <strong class="headline-with-separator">From The Blog</strong>
+                </h3>
             </div>
         </div>
-    </section>
-    <!-- Info Section / End -->
 
-
-    <!-- Recent Blog Posts -->
-    <section class="fullwidth margin-top-0 padding-top-75 padding-bottom-75" data-background-color="#fff">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="headline centered margin-bottom-55">
-                        <strong class="headline-with-separator">From The Blog</strong>
-                    </h3>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Blog Post Item -->
-                <div class="col-md-4">
-                    <a href="pages-blog-post.html" class="blog-compact-item-container">
-                        <div class="blog-compact-item">
-                            <img src="images/blog-compact-post-01.jpg" alt="">
-                            <span class="blog-item-tag">Tips</span>
-                            <div class="blog-compact-item-content">
-                                <ul class="blog-post-tags">
-                                    <li>22 August 2019</li>
-                                </ul>
-                                <h3>Hotels for All Budgets</h3>
-                                <p>Sed sed tristique nibh iam porta volutpat finibus. Donec in aliquet urneget mattis
-                                    lorem. Pellentesque pellentesque.</p>
-                            </div>
+        <div class="row">
+            <!-- Blog Post Item -->
+            <div class="col-md-4">
+                <a href="pages-blog-post.html" class="blog-compact-item-container">
+                    <div class="blog-compact-item">
+                        <img src="images/blog-compact-post-01.jpg" alt="">
+                        <span class="blog-item-tag">Tips</span>
+                        <div class="blog-compact-item-content">
+                            <ul class="blog-post-tags">
+                                <li>22 August 2019</li>
+                            </ul>
+                            <h3>Hotels for All Budgets</h3>
+                            <p>Sed sed tristique nibh iam porta volutpat finibus. Donec in aliquet urneget mattis
+                                lorem. Pellentesque pellentesque.</p>
                         </div>
-                    </a>
-                </div>
-                <!-- Blog post Item / End -->
-
-                <!-- Blog Post Item -->
-                <div class="col-md-4">
-                    <a href="pages-blog-post.html" class="blog-compact-item-container">
-                        <div class="blog-compact-item">
-                            <img src="images/blog-compact-post-02.jpg" alt="">
-                            <span class="blog-item-tag">Tips</span>
-                            <div class="blog-compact-item-content">
-                                <ul class="blog-post-tags">
-                                    <li>18 August 2019</li>
-                                </ul>
-                                <h3>The 50 Greatest Street Arts In London</h3>
-                                <p>Sed sed tristique nibh iam porta volutpat finibus. Donec in aliquet urneget mattis
-                                    lorem. Pellentesque pellentesque.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- Blog post Item / End -->
-
-                <!-- Blog Post Item -->
-                <div class="col-md-4">
-                    <a href="pages-blog-post.html" class="blog-compact-item-container">
-                        <div class="blog-compact-item">
-                            <img src="images/blog-compact-post-03.jpg" alt="">
-                            <span class="blog-item-tag">Tips</span>
-                            <div class="blog-compact-item-content">
-                                <ul class="blog-post-tags">
-                                    <li>10 August 2019</li>
-                                </ul>
-                                <h3>The Best Cofee Shops In Sydney Neighborhoods</h3>
-                                <p>Sed sed tristique nibh iam porta volutpat finibus. Donec in aliquet urneget mattis
-                                    lorem. Pellentesque pellentesque.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- Blog post Item / End -->
-
-                <div class="col-md-12 centered-content">
-                    <a href="pages-blog.html" class="button border margin-top-10">View Blog</a>
-                </div>
-
+                    </div>
+                </a>
             </div>
+            <!-- Blog post Item / End -->
 
-        </div>
-    </section>
-    <!-- Recent Blog Posts / End -->
-
-
-    <!-- Footer
-    ================================================== -->
-    <div id="footer" class="sticky-footer">
-        <!-- Main -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-sm-6">
-                    <img class="footer-logo" src="{{asset('website/assets/images/logo.png')}}" alt="logo">
-                    <br><br>
-                    <p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut
-                        lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
-                </div>
+            <!-- Blog Post Item -->
+            <div class="col-md-4">
+                <a href="pages-blog-post.html" class="blog-compact-item-container">
+                    <div class="blog-compact-item">
+                        <img src="images/blog-compact-post-02.jpg" alt="">
+                        <span class="blog-item-tag">Tips</span>
+                        <div class="blog-compact-item-content">
+                            <ul class="blog-post-tags">
+                                <li>18 August 2019</li>
+                            </ul>
+                            <h3>The 50 Greatest Street Arts In London</h3>
+                            <p>Sed sed tristique nibh iam porta volutpat finibus. Donec in aliquet urneget mattis
+                                lorem. Pellentesque pellentesque.</p>
+                        </div>
+                    </div>
+                </a>
             </div>
+            <!-- Blog post Item / End -->
 
-            <!-- Copyright -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="copyrights">© {{date("Y")}} City Mobile. All Rights Reserved.</div>
-                </div>
+            <!-- Blog Post Item -->
+            <div class="col-md-4">
+                <a href="pages-blog-post.html" class="blog-compact-item-container">
+                    <div class="blog-compact-item">
+                        <img src="images/blog-compact-post-03.jpg" alt="">
+                        <span class="blog-item-tag">Tips</span>
+                        <div class="blog-compact-item-content">
+                            <ul class="blog-post-tags">
+                                <li>10 August 2019</li>
+                            </ul>
+                            <h3>The Best Cofee Shops In Sydney Neighborhoods</h3>
+                            <p>Sed sed tristique nibh iam porta volutpat finibus. Donec in aliquet urneget mattis
+                                lorem. Pellentesque pellentesque.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Blog post Item / End -->
+
+            <div class="col-md-12 centered-content">
+                <a href="pages-blog.html" class="button border margin-top-10">View Blog</a>
             </div>
 
         </div>
 
     </div>
-    <!-- Footer / End -->
+</section>
+<!-- Recent Blog Posts / End -->
 
 
-    <!-- Back To Top Button -->
-    <div id="backtotop"><a href="#"></a></div>
+<!-- Footer
+================================================== -->
+<div id="footer" class="sticky-footer">
+    <!-- Main -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-6">
+                <img class="footer-logo" src="{{asset('website/assets/images/logo.png')}}" alt="logo">
+                <br><br>
+                <p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut
+                    lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
+            </div>
+        </div>
 
+        <!-- Copyright -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="copyrights">© {{date("Y")}} City Mobile. All Rights Reserved.</div>
+            </div>
+        </div>
+
+    </div>
 
 </div>
+<!-- Footer / End -->
+
+
+<!-- Back To Top Button -->
+<div id="backtotop"><a href="#"></a></div>
+
+
 <!-- Wrapper / End -->
 
 
@@ -549,7 +547,6 @@
 <script src="{{asset('website/assets/scripts/leaflet-control-geocoder.js')}}"></script>
 
 
-
 <!-- Style Switcher
 ================================================== -->
 <script src="{{asset('website/assets/scripts/switcher.js')}}"></script>
@@ -581,8 +578,10 @@
 </div>
 <!-- Style Switcher / End -->
 
-
+    </section>
+</div>
 </body>
+
 
 <!-- Mirrored from www.vasterad.com/themes/listeo/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Jun 2020 11:13:37 GMT -->
 </html>
