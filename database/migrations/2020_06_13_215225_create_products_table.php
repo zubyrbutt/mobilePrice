@@ -15,8 +15,8 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('company_id');
-            $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');
+            $table->unsignedBigInteger('category_id');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->string('mobileName');
             $table->integer('mobilePrice');
             $table->string('display');
@@ -30,7 +30,6 @@ class CreateProductsTable extends Migration
             $table->string('marketStatus')->nullable();
             $table->string('images')->nullable();
             $table->text('summary')->nullable();
-
             $table->timestamps();
         });
     }

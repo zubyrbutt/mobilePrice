@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Company;
+use App\Category;
 use App\Home\Home;
 use App\Product;
 use Illuminate\Http\Request;
@@ -16,11 +16,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        //$products = Product::with('company')->where('company_id',4)->paginate(5);
         $products = Product::paginate(5);
-        $companies = Company::paginate(6);
-        $oppo = Product::with('company')->where('company_id',2)->paginate(5);
-        return view('website.pages.home',compact('products','companies','oppo'));
+        $categories = Category::paginate(6);
+
+        return view('website.pages.home')->with('products',$products)->with('categories',$categories);
     }
 
     /**

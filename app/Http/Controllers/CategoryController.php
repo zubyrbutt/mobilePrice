@@ -45,22 +45,17 @@ class CategoryController extends Controller
 
         $this->validate(request(),[
             'name' =>'required',
-            'image' => 'required'
 
         ]);
-        $cover = $request->file('image');
-        $extension = $cover->getClientOriginalExtension();
-        Storage::disk('public')->put($cover->getFilename().'.'.$extension,  File::get($cover));
+
+        $category = new Category;
 
 
-        $brand = new Category;
+        $category->name = $request->get('name');
+        $category->summary = $request->get('summary');
 
 
-        $brand->name = $request->get('name');
-        $brand->summary = $request->get('summary');
-        $brand->image = $cover->getClientOriginalName();
-
-        $brand->save();
+        $category->save();
 
         return redirect()->back();
     }

@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Admin;
 use App\Category;
-use App\Company;
 use App\Product;
 use Illuminate\Http\Request;
 
@@ -28,8 +27,8 @@ class AdminController extends Controller
      */
     public function create()
     {
-        $brands = Company::all();
-        return  view('admin.pages.android',compact('brands'));
+        $brands = Category::all();
+        return  view('admin.pages.products',compact('brands'));
 
     }
 
@@ -58,7 +57,7 @@ class AdminController extends Controller
         $product = new Product;
 
 
-        $product->company_id = $request->get('company_id');
+        $product->category_id = $request->get('category_id');
         $product->mobileName = $request->get('mobileName');
         $product->mobilePrice = $request->get('mobilePrice');
         $product->display = $request->get('display');
