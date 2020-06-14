@@ -30,8 +30,8 @@
                     <!-- Logo -->
                     <div id="logo">
                         <a href=""><img src="{{asset('website/assets/images/logo2.png')}}"
-                                                    data-sticky-logo="{{asset('website/assets/images/logo2.png')}}"
-                                                    alt=""></a>
+                                        data-sticky-logo="{{asset('website/assets/images/logo2.png')}}"
+                                        alt=""></a>
                     </div>
 
                     <!-- Mobile Navigation -->
@@ -56,9 +56,9 @@
 
     </header>
     <div class="clearfix"></div>
-@yield('content')
+    @yield('content')
 
-   @include('website.layouts.scripts')
+    @include('website.layouts.scripts')
     <div class="row">
         <div class="col-md-12">
             <div class="copyrights">© {{date("Y")}} City Mobile. All Rights Reserved.</div>

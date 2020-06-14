@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7af7b05-90fc-46c2-8154-ea98f2e677f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/website/layouts/scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Company.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AndroidController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_26_050424_create_android_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_17_101738_create_companies_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_17_101916_create_products_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/android.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/products.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/website/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/website/layouts/main.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/website/pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/website/pages/home.blade.php" afterDir="false" />
     </list>
@@ -138,7 +124,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/wamp64/www/pkteam/pkteam_idc" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -202,7 +188,9 @@
       <workItem from="1591462632509" duration="2060000" />
       <workItem from="1591514558309" duration="1407000" />
       <workItem from="1591525350605" duration="7291000" />
-      <workItem from="1592082919007" duration="4941000" />
+      <workItem from="1592082919007" duration="5763000" />
+      <workItem from="1592121642431" duration="654000" />
+      <workItem from="1592155392516" duration="1607000" />
     </task>
     <servers />
   </component>

@@ -43,9 +43,26 @@
                             <img src="{{$product->images}}" alt="{{$product->mobileName}}" style="margin: 0; padding:0"
                                  width="200" height="160">
                             <h3><strong>Rs. {{$product->mobilePrice}}</strong></h3>
-
-                            <p>{{$product->mobileName}}</p>
                         </div>
+
+                        <div class="col-12">
+                            <p>{{$product->mobileName}}</p>
+
+                            <div class="col-md-6 col-sm-3">
+                                <sapn><i class=" sl sl-icon-envelope-open"></i><small>  3GB</small> </sapn>
+                            </div>
+                            <div class="col-md-6 col-sm-3">
+                                <sapn><i class="  sl sl-icon-settings"></i> <small>  234 MP</small></sapn>
+                            </div>
+                            <div class="col-md-6 col-sm-3">
+                                <sapn><i class=" sl sl-icon-check"></i><small>  3400 lioukkjkn</small> </sapn>
+                            </div>
+                            <div class="col-md-6 col-sm-3">
+                                <sapn><i class=" sl sl-icon-envelope-open"></i><small>  noraml</small> </sapn>
+                            </div>
+                        </div>
+
+
                     </div>
                 @endforeach
                 {{ $products->links() }}
@@ -67,6 +84,6 @@
             {{--                        </div>--}}
             {{--                    </div>--}}
             {{--                @endforeach--}}
-
-
+        </div>
+    </section>
 @endsection
