@@ -2,13 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Category;
-use App\Home\Home;
-use App\Product;
+use App\Import;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
-class HomeController extends Controller
+class ImportController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,10 +14,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $products = Product::paginate(5);
-        $categories = Category::paginate(6);
-
-        return view('website.pages.home')->with('products',$products)->with('categories',$categories);
+        //
     }
 
     /**
@@ -30,7 +24,7 @@ class HomeController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.pages.import');
     }
 
     /**
@@ -41,16 +35,34 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'file' => 'required|mimes:csv,txt'
+        ]);
+        $file = file($request->file->getRealPath());
+        $data = array_slice($file,1);
+        $parts = (array_chunk($data,1000));
+
+        foreach ($parts as $index=>$part)
+        {
+            $fileName = resource_path('pending-files/'.date('y-m-d-H-i-s').$index. '.csv');
+            file_put_contents($fileName, $part);
+
+            //This is from Import Model (Job and Queues)
+            (new Import())->importToDb();
+
+            session()->flash('message','Queued for importing');
+
+            return redirect('import');
+        }
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Home\Home  $home
+     * @param  \App\Import  $import
      * @return \Illuminate\Http\Response
      */
-    public function show(Home $home)
+    public function show(Import $import)
     {
         //
     }
@@ -58,10 +70,10 @@ class HomeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Home\Home  $home
+     * @param  \App\Import  $import
      * @return \Illuminate\Http\Response
      */
-    public function edit(Home $home)
+    public function edit(Import $import)
     {
         //
     }
@@ -70,10 +82,10 @@ class HomeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Home\Home  $home
+     * @param  \App\Import  $import
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Home $home)
+    public function update(Request $request, Import $import)
     {
         //
     }
@@ -81,29 +93,11 @@ class HomeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Home\Home  $home
+     * @param  \App\Import  $import
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Home $home)
+    public function destroy(Import $import)
     {
         //
     }
-
-
-    public function mobileDetail()
-    {
-        $mobileDetail = DB::table('products')->pluck("mobileName", "id");
-        return view('dropdown', compact('mobileDetail'));
-    }
-
-    public function getDetail($id)
-    {
-        $getMobile = DB::table("products")->where("id", $id)->pluck("mobileName", "id");
-
-       // $address = DB::table("admins")->where("id", $id)->pluck("address", "id");
-
-        return json_encode($getMobile);
-    }
-
-
 }

@@ -26,6 +26,7 @@
                         </a>
                     @endforeach
                 </div>
+
             </div>
         </div>
     </div>
@@ -34,19 +35,21 @@
     <section class="fullwidth padding-top-75 padding-bottom-70" data-background-color="#f9f9f9">
         <div class="container">
 
-            <div class="row icons-container">
+            <div class="row">
                 <!-- Stage -->
 
                 @foreach($products as $product)
-                    <div class="col-md-4">
-                        <div class="icon-box-2">
+                    <div class="col-md-4" style="border:1px solid #f2eef2">
+                        <div class="icon-box  ml-2 p-2">
                             <img src="{{$product->images}}" alt="{{$product->mobileName}}" style="margin: 0; padding:0"
-                                 width="200" height="160">
-                            <h3><strong>Rs. {{$product->mobilePrice}}</strong></h3>
+                                 width="200" height="160" onclick="detailModal()">
+                            <span value="{{$product->id}}">
+                            <h3 ><strong>Rs. {{$product->mobilePrice}}</strong></h3>
+                                </span>
                         </div>
 
                         <div class="col-12">
-                            <p>{{$product->mobileName}}</p>
+                            <p id="">{{$product->mobileName}}</p>
 
                             <div class="col-md-6 col-sm-3">
                                 <sapn><i class=" sl sl-icon-envelope-open"></i><small>  3GB</small> </sapn>
@@ -61,29 +64,29 @@
                                 <sapn><i class=" sl sl-icon-envelope-open"></i><small>  noraml</small> </sapn>
                             </div>
                         </div>
-
-
                     </div>
                 @endforeach
-                {{ $products->links() }}
-                {{--                <a href="#" class="pull-right"><p class="pull-right">Latest mobiles</p>--}}
-                {{--                </a>--}}
             </div>
-            {{$products->links()}}
-            {{--            <div class="row icons-container">--}}
-            {{--                <!-- Stage -->--}}
-
-            {{--                @foreach($oppo as $item)--}}
-            {{--                    <div class="col-md-4">--}}
-            {{--                        <div class="icon-box-2">--}}
-            {{--                            <img src="{{$item->images}}" alt="{{$item->mobileName}}" style="margin: 0; padding:0"--}}
-            {{--                                 width="200" height="160">--}}
-            {{--                            <h3><strong>Rs. {{$item->mobilePrice}}</strong></h3>--}}
-
-            {{--                            <p>{{$item->mobileName}}</p>--}}
-            {{--                        </div>--}}
-            {{--                    </div>--}}
-            {{--                @endforeach--}}
         </div>
     </section>
+
+{{--    Modal--}}
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 @endsection

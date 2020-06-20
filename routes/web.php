@@ -30,5 +30,13 @@ Route::get('mobile/imageupload', 'CategoryController@imageupload')->name('catego
 
 Route::get('/', 'HomeController@index')->name('home.index');
 
+Route::get('/mobileDetail/{id}', 'HomeController@mobileDetail')->name('mobileDetail');
+Route::get('/getDetail/{id}', 'HomeController@getDetail')->name('getDetail');
 
+Route::get('/import','ImportController@create')->name('import');
+Route::post('/import','ImportController@store')->name('import');
 
+Route::get('test', function (){
+    (new \App\Import())->importToDb();
+    dd('done');
+});

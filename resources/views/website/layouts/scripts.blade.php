@@ -12,3 +12,12 @@
 <script type="text/javascript" src="{{asset('website/assets/scripts/jquery-ui.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('website/assets/scripts/tooltips.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('website/assets/scripts/custom.js')}}"></script>
+<script>
+    $('#myModal').modal('hide');
+
+    $(".clickHere").click(function(){
+        $("#myModal").addClass("showww");
+    });
+
+
+</script>

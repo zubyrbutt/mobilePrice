@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <!-- Basic Page Needs
     ================================================== -->
@@ -10,7 +11,12 @@
     <link rel="stylesheet" href="{{asset('website/assets/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('website/assets/css/main-color.css')}}" id="colors">
 </head>
-
+<style>
+    .showww .modal-content {
+        background: DarkViolet;
+        color:white
+    }
+</style>
 <body class="transparent-header">
 
 <!-- Wrapper -->
@@ -58,17 +64,16 @@
     <div class="clearfix"></div>
     @yield('content')
 
-    @include('website.layouts.scripts')
+
     <div class="row">
         <div class="col-md-12">
             <div class="copyrights">© {{date("Y")}} City Mobile. All Rights Reserved.</div>
         </div>
     </div>
 </div>
-</section>
-</div>
-</body>
 
+</body>
+@include('website.layouts.scripts')
 
 </html>
 
